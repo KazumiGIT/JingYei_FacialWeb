@@ -1,4 +1,4 @@
-# JingYei Facial Studio
+# Jing Yei Facial
 
 A beautiful, modern landing page for a facial treatment studio featuring a soft pink pastel color theme.
 
@@ -32,4 +32,4 @@ This site can be deployed to:
 
 ## License
 
-© 2025 JingYei Facial Studio. All rights reserved.
+© 2025 Jing Yei Facial. All rights reserved.
