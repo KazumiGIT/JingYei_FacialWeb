@@ -23,6 +23,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Results</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="https://wa.me/601172613285" class="nav-cta">Book Now</a></li>
             </ul>
@@ -65,9 +66,60 @@
         <div class="container">
             <h2 class="section-title">My Signature Treatments</h2>
             <div class="services-grid">
-                face-slimming results.</p>
+                <div class="service-card">
+                    <div class="service-icon">💆</div>
+                    <h3>Bo-Jing Technique</h3>
+                    <p>Improve sagging skin with facial muscle relaxation. Prevents yellow skin, reduces dark spots,
+                        brightens and firms, improves swollen face, and helps dark circles problems.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Japanese Cypress Acu-Beauty Technique</h3>
+                    <p>Achieve a visible V-shaped face. Nourishes and hydrates the skin with oil, effectively helps
+                        swollen face, firms and lifts facial muscles, promotes skin blood circulation, and minimizes
+                        pores.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Traditional Facial Gua Sha</h3>
+                    <p>Detox your skin naturally. Promotes skin cell renewal and self-recovery function, minimizes pores
+                        and tightens skin, helps internal regulation, soothes wrinkles, prevents aging, and delivers
+                        face-slimming results.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Real Results</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <h3 class="testimonial-title">Bo-Jing Treatment Results</h3>
+
+                    <!-- Before/After Slider -->
+                    <div class="ba-slider">
+                        <div class="img-container img-after">
+                            <img src="bo-jing-after.jpg" alt="After Bo-Jing Treatment">
+                        </div>
+                        <div class="img-container img-before" id="img-before">
+                            <img src="bo-jing-before.jpg" alt="Before Bo-Jing Treatment">
+                        </div>
+                        <div class="slider-handle" id="slider-handle"></div>
+                        <input type="range" min="0" max="100" value="50" class="slider-range" id="slider-range"
+                            oninput="updateSlider(this.value)">
+                    </div>
+                    <div class="ba-labels">
+                        <span>Before</span>
+                        <span>After</span>
+                    </div>
+
+                    <p style="margin-top: 1.5rem; color: var(--dark-gray);">
+                        "Visible improvement in face shape and skin tone after just one session of Bo-Jing Technique."
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
