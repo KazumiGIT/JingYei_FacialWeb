@@ -579,41 +579,6 @@ body {
     margin: 0 auto var(--spacing-md);
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
-    aspect-ratio: 3/4;
-    /* Adjust based on image aspect ratio */
-}
-
-.ba-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.img-before {
-    width: 50%;
-    /* Initial position */
-    z-index: 2;
-    border-right: 2px solid var(--white);
-}
-
-.img-after {
-    z-index: 1;
-}
-
-.slider-handle {
-    position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40px;
