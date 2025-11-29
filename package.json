@@ -1,0 +1,16 @@
+{
+    "name": "jingyei-facial-web",
+    "version": "1.0.0",
+    "description": "JingYei Facial Studio Landing Page",
+    "scripts": {
+        "dev": "echo 'Open index.html in browser'",
+        "build": "echo 'No build needed - static site'"
+    },
+    "keywords": [
+        "facial",
+        "landing-page",
+        "static"
+    ],
+    "author": "KazumiGIT",
+    "license": "MIT"
+}
