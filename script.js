@@ -103,14 +103,13 @@ style.textContent = `
         }
     }
 `;
-`;
 document.head.appendChild(style);
 
 // Before/After Slider
 function updateSlider(val) {
     const beforeImg = document.getElementById('img-before');
     const sliderHandle = document.getElementById('slider-handle');
-    
+
     if (beforeImg && sliderHandle) {
         beforeImg.style.width = val + "%";
         sliderHandle.style.left = val + "%";
