@@ -1,4 +1,4 @@
-# Radiant Glow Facial Studio
+# JingYei Facial Studio
 
 A beautiful, modern landing page for a facial treatment studio featuring a soft pink pastel color theme.
 
@@ -32,4 +32,4 @@ This site can be deployed to:
 
 ## License
 
-© 2025 Radiant Glow Facial Studio. All rights reserved.
+© 2025 JingYei Facial Studio. All rights reserved.
