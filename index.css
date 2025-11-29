@@ -616,11 +616,228 @@ body {
     opacity: 0.8;
 }
 
+border: 2px solid transparent;
+backdrop-filter: blur(10px);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-pink);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.service-card:nth-child(1) .service-icon {
+    animation-delay: 0s;
+}
+
+.service-card:nth-child(2) .service-icon {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) .service-icon {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(4) .service-icon {
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.service-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+/* ==================== */
+/* WHY US SECTION       */
+/* ==================== */
+
+.why-us {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: var(--light-gray);
+    scroll-margin-top: 80px;
+}
+
+.why-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.feature-item {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    padding: var(--spacing-md);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    border-left: 4px solid transparent;
+}
+
+.feature-item:hover {
+    border-left-color: var(--deep-pink);
+    transform: translateX(10px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-number {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    min-width: 60px;
+}
+
+.feature-text h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+}
+
+.feature-text p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+/* ==================== */
+/* CTA SECTION          */
+/* ==================== */
+
+.cta-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: var(--gradient-primary);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
+}
+
+.cta-text {
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.phone-number {
+    margin-top: var(--spacing-md);
+    font-size: 1.125rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* ==================== */
+/* FOOTER               */
+/* ==================== */
+
+.footer {
+    padding: var(--spacing-md);
+    background: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    opacity: 0.8;
+}
+
 /* ==================== */
 /* RESPONSIVE DESIGN    */
 /* ==================== */
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0.75rem var(--spacing-sm);
+    }
+
+    .nav-menu {
+        gap: var(--spacing-sm);
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .nav-cta {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
@@ -640,29 +857,90 @@ body {
         margin-right: auto;
     }
 
+    .services {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .service-card {
+        padding: var(--spacing-sm);
+    }
+
+    .service-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .why-us {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
     .why-us-content {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .why-us-image {
         order: -1;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
     .feature-item {
         flex-direction: column;
         text-align: center;
+        padding: var(--spacing-sm);
     }
 
     .feature-number {
         margin: 0 auto;
     }
+
+    .cta-section {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .nav-logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .nav-cta {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+
     .cta-button {
         padding: 0.875rem 1.5rem;
         font-size: 1rem;
@@ -671,5 +949,13 @@ body {
     .cta-button.large {
         padding: 1rem 1.75rem;
         font-size: 1.125rem;
+    }
+
+    .feature-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .feature-text p {
+        font-size: 0.9rem;
     }
 }
